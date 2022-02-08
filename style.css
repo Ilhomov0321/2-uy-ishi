@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fraunces', serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  background-color: #fff;
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 2.25rem;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav div:last-child {
+    display: none;
+  }
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+header p {
+  padding: 12px 24px;
+  font-size: 3.6rem;
+  letter-spacing: 0.5rem;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section img {
+  max-width: 500px;
+  max-height: 620px;
+}
+
+section .first-div {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 500px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 12px 24px;
+}
+
+section .last-div {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 500px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 12px 24px;
+}
+
+section h1 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 400px;
+  letter-spacing: 5px;
+  line-height: 2.7rem;
+  text-align: center;
+}
+
+section h5 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 400px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  margin: 1.8rem 0;
+}
+
+section p:last-child {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1000px) {
+  p:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  section img {
+    max-width: 33rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section .first-div {
+    display: none;
+  }
+  section p:last-child {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
